@@ -51,6 +51,7 @@ class GraphPlot(View):
         maxrange = int(request.POST['maxrange'])
         ran = range(minrange,maxrange)
         import re
+        a =1
         x = np.array(ran)
         eq = request.POST['lin_eq']
         eq = eq.replace(' ', '')
