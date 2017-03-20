@@ -53,6 +53,8 @@ class GraphPlot(View):
         import re
         x = np.array(ran)
         eq = request.POST['lin_eq']
+        eq = eq.replace(' ', '')
+        eq = eq.replace('^', '**')
         eq = re.sub(r'([0-9]*)([a-zA-Z])', r'\1*\2', eq)
         eq = eq.replace('+*', '+')
         eq = eq.replace('-*', '-')
