@@ -15,6 +15,17 @@ class Calculate(View):
     def post(self,request):
         if 'derivative' in request.POST:
             lin_eq = request.POST['lin_eq']
+            import re
+
+
+            # eq = '2*x + x**2+1'
+            lin_eq = lin_eq.replace(' ', '')
+            lin_eq = lin_eq.replace('^', '**')
+
+            lin_eq = re.sub(r'([0-9]*)([a-zA-Z])', r'\1*\2', lin_eq)
+            lin_eq = lin_eq.replace('+*', '+')
+            lin_eq = lin_eq.replace('-*', '-')
+            lin_eq = lin_eq.replace('/*', '/')
             x = Symbol("x")
             print("HI")
             yprime = diff(lin_eq, x)
@@ -25,6 +36,10 @@ class Calculate(View):
             return render(request, 'derivative.html', context)
         elif 'integral' in request.POST:
             lin_eq = request.POST['lin_eq']
+            lin_eq = re.sub(r'([0-9]*)([a-zA-Z])', r'\1*\2', lin_eq)
+            lin_eq = lin_eq.replace('+*', '+')
+            lin_eq = lin_eq.replace('-*', '-')
+            lin_eq = lin_eq.replace('/*', '/')
             x = symbols('x')
             integral = integrate(lin_eq, x)
             return render(request, 'integral.html', {'eq': lin_eq, 'integral': integral})
@@ -35,8 +50,13 @@ class GraphPlot(View):
         minrange = int(request.POST['minrange'])
         maxrange = int(request.POST['maxrange'])
         ran = range(minrange,maxrange)
+        import re
         x = np.array(ran)
         eq = request.POST['lin_eq']
+        eq = re.sub(r'([0-9]*)([a-zA-Z])', r'\1*\2', eq)
+        eq = eq.replace('+*', '+')
+        eq = eq.replace('-*', '-')
+        eq = eq.replace('/*', '/')
         y = eval(eq)
         plt.axis([minrange, maxrange, minrange, maxrange])
         plt.plot(x, y)
