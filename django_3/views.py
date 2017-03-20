@@ -41,7 +41,7 @@ class GraphPlot(View):
         print(y)
         plt.axis([minrange, maxrange, minrange, maxrange])
         plt.plot(x, y)
-        plt.savefig("test.png")
+        plt.savefig("C:/Users/Nishaf Naeem Ch/django_3/static/bootstrap/images/test.png")
         plt.close()
         return render(request, 'graph.html')
 

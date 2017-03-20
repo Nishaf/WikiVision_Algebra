@@ -27,8 +27,8 @@ urlpatterns = [
     url(r'models/piston-applet', Piston.as_view(), name='piston'),
     url(r'models/pulleys', Pulleys.as_view(), name='pulleys'),
     url(r'models/', Models.as_view(), name='models'),
-    url(r'calculate/', Calculate.as_view()),
-    url(r'graph/', GraphPlot.as_view()),
+    url(r'calculate/', Calculate.as_view(), name='calculate'),
+    url(r'graph/', GraphPlot.as_view(), name='graph'),
     url(r'^', BasePage.as_view(), name='basepage'),
 
 
