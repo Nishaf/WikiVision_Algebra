@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WikiVision_A algebra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiVision A_algebra</title>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/icomoon.css' %}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/themify-icons.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/magnific-popup.css' %}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.theme.default.min.css' %}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flexslider.css' %}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'pulleys/katex.min-2017-01-19.css' %}">
+    <link rel="stylesheet" href="{% static 'pulleys/math2016-07-23.css' %}">
+	<link rel="stylesheet" href="{% static 'pulleys/distance_formula.css' %}">
+
+    <!-- Pulley Files-->
+    <script type="text/javascript" async="" src="{% static 'pulleys/ASCIIMathTeXKaTeX-2016-06-17.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/katex.minjs-2017-13-01.js' %}"></script>
+
+    <script type="text/javascript" async="" src="{% static 'pulleys/ddivs-voting-2016-10-11.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jsxgraphcore-0.99.5.js' %}"></script>
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'bootstrap/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="">WikiVision_A algebra</a></div>
+				</div>
+				<div class="col-xs-8 text-right">
+					<ul>
+						<li><a href="{% url 'basepage' %}">Home</a></li>
+						<li class="active"><a href="{% url 'models' %}">Models</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="gtco-hero" class="js-fullheight"  data-section="home">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'bootstrap/images/cal1.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>WikiVision_A algebra</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/math_equations-wallpaper-1920x1080.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+                            <h2>Finding Derivatives and Integrals Of your linear Equations</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/cal2.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>Draw Graphs.</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+		<div class="gtco-section" id="gtco-services" data-section="services">
+			<div class="gtco-container">
+                <h1 align="center">Distance Formula</h1>
+                <p>We have a right angled triangle with hypotenuse length c, as shown:</p>
+                <img src="{% static 'pulleys/images/r_t.svg' %}"/>
+                <p>Recall Pythagoras' Theorem, which tells us the length of the longest side (the hypotenuse):</p>
+                <blockquote>
+                    <p class="formula">`c=sqrt(a^2+b^2)`</p>
+                </blockquote>
+                <p>We use this to find the distance between any two points <span class="intmath">(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</span> and <span class="intmath">(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)</span> on the cartesian <span class="intmath">(<i>x</i>-<i>y</i>)</span> plane:</p>
+
+                <div class="svgphpWrap">
+                    <svg id="svgphp-distance-formula-1-s1" width="310" height="230" preserveAspectRatio="xMinYMin meet" viewBox="0 0 310 230" xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">@font-face {font-family:MathJax_Math-italic}@font-face{font-family: MathJax_Main;};path.grids{shape-rendering:crispEdges} text.intmath{font-weight:normal;font-size:0.9em; stroke:none; fill:#000; font-family:MathJax_Main,'Times New Roman',Times,serif} text.intmathItalic{font-size:0.9em;stroke:none; fill:#000; font-weight:normal; font-style:normal; font-family:MathJax_Math-italic,'Times New Roman',Times,serif}</style>
+                    <rect id="brdBG-svgphp-distance-formula-1-s1" stroke="none" fill="#fff" x="0" y="0" width="310" height="230" ></rect>
+                    <path id="axes-svgphp-distance-formula-1-s1" stroke="#444" stroke-width="1" shape-rendering="crispEdges" d = " M15,0 15,230M0,199 310,199 M15,203 15,195"></path>
+                    <text x="308" y="190" class="intmathItalic" text-anchor="end">x</text>
+                    <text x="24" y="11" class="intmathItalic" text-anchor="start">y</text>
+                    <path stroke="#555" stroke-width="1" fill="#555" transform = "rotate(90 310 199)" d = "M 310 199 L 306 213 L 314 213 Z"></path>
+                    <path stroke="#555" stroke-width="1" fill="#555" transform = "rotate(0 15 0)" d = "M 15 0 L 11 14 L 19 14 Z"></path>
+                    <path stroke="#165a71" stroke-width="1" fill="none" d = "M58.75,159 L 277.5,159 L 277.5,39 z "></path>
+                    <rect stroke="#165a71" stroke-width="1" fill="none" x="260" y="143" width="17.5" height="16" ></rect>
+                    <path stroke="#f0f" stroke-width="1" d="M59, 159 278, 39"></path>
+                    <circle cx="59" cy="159" r="3" stroke="none" fill="#165a71" ></circle>
+                    <circle cx="278" cy="39" r="3" stroke="none" fill="#165a71" ></circle>
+                    <div class="intmathItalic svgHtml" style="top:168px;left:41px">A (x<sub>1</sub>, y<sub>1</sub>)</div><div class="intmathItalic svgHtml" style="top:168px;left:234px">B (x<sub>2</sub>, y<sub>1</sub>)</div><div class="intmathItalic svgHtml" style="top:8px;left:251px">C (x<sub>2</sub>, y<sub>2</sub>)</div><div class="intmath svgHtml" style="top:64px;left:103px">distance = <i>d</i></div></svg>
+                </div> <!-- svgWrap -->
+
+
+                </blockquote>
+                <p>The point <i>B</i> (<i>x</i><sub>2</sub>, <i>y</i><sub>1</sub>) is at the right angle. We can see that:</p>
+                <ul>
+                <li>The distance between the points <span class="intmath"><i>A</i>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</span> and <span class="intmath"><i>B</i>(<i>x</i><sub>2</sub>, <i>y</i><sub>1</sub>)</span> is
+                simply <i>x</i><sub>2</sub> &minus; <i>x</i><sub>1</sub> and</li>
+                <li>The distance between the points <span class="intmath"><i>C</i>(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)</span> and <span class="intmath"><i>B</i>(<i>x</i><sub>2</sub>, <i>y</i><sub>1</sub>)</span> is
+                simply <i>y</i><sub>2</sub> &minus; <i>y</i><sub>1</sub>.</li>
+                </ul>
+
+
+                  <div class="imgSvg">
+                <div class="svgphpWrap">
+                <svg id="svgphp-distance-formula-1-s2" width="310" height="230" preserveAspectRatio="xMinYMin meet" viewBox="0 0 310 230" xmlns="http://www.w3.org/2000/svg">
+                <style type="text/css">@font-face {font-family:MathJax_Math-italic;src:url('/includes/cssjs/katex/fonts/MathJax_Math-Italic.eot');src:url('/includes/cssjs/katex/fonts/MathJax_Math-Italic.eot?#iefix') format('embedded-opentype'),url('/includes/cssjs/katex/fonts/MathJax_Math-Italic.woff') format('woff');}@font-face{font-family: MathJax_Main;src: url('/includes/cssjs/katex/fonts/MathJax_Main-Regular.eot');src:url('/includes/cssjs/katex/fonts/MathJax_Main-Regular.eot?#iefix') format('embedded-opentype'),url('/includes/cssjs/katex/fonts/MathJax_Main-Regular.woff')format('woff')};path.grids{shape-rendering:crispEdges} text.intmath{font-weight:normal;font-size:0.9em; stroke:none; fill:#000; font-family:MathJax_Main,'Times New Roman',Times,serif} text.intmathItalic{font-size:0.9em;stroke:none; fill:#000; font-weight:normal; font-style:normal; font-family:MathJax_Math-italic,'Times New Roman',Times,serif}</style>
+                <rect id="brdBG-svgphp-distance-formula-1-s2" stroke="none" fill="#fff" x="0" y="0" width="310" height="230" ></rect>
+                <path id="axes-svgphp-distance-formula-1-s2" stroke="#444" stroke-width="1" shape-rendering="crispEdges" d = " M15,0 15,230M0,199 310,199 M15,203 15,195"></path>
+                <text x="308" y="190" class="intmathItalic" text-anchor="end">x</text>
+                <text x="24" y="11" class="intmathItalic" text-anchor="start">y</text>
+                <path stroke="#555" stroke-width="1" fill="#555" transform = "rotate(90 310 199)" d = "M 310 199 L 306 213 L 314 213 Z"></path>
+                <path stroke="#555" stroke-width="1" fill="#555" transform = "rotate(0 15 0)" d = "M 15 0 L 11 14 L 19 14 Z"></path>
+                <path stroke="#165a71" stroke-width="1" fill="none" d = "M58.75,159 L 277.5,159 L 277.5,39 z "></path>
+                <rect stroke="#165a71" stroke-width="1" fill="none" x="260" y="143" width="17.5" height="16" ></rect>
+                <path stroke="#f0f" stroke-width="1" d="M59, 159 278, 39"></path>
+                <circle cx="59" cy="159" r="3" stroke="none" fill="#165a71" ></circle>
+                <circle cx="278" cy="39" r="3" stroke="none" fill="#165a71" ></circle>
+                <div class="intmathItalic svgWhiteBg svgHtml" style="top:168px;left:41px">A (x<sub>1</sub>, y<sub>1</sub>)</div><div class="intmathItalic svgWhiteBg svgHtml" style="top:168px;left:234px">B (x<sub>2</sub>, y<sub>1</sub>)</div><div class="intmathItalic svgWhiteBg svgHtml" style="top:12px;left:251px">C (x<sub>2</sub>, y<sub>2</sub>)</div><div class="intmathItalic svgWhiteBg svgHtml" style="top:152px;left:159px">x<sub>2</sub> &minus; x<sub>1</sub></div><div class="intmathItalic svgWhiteBg svgHtml" style="top:88px;left:256px">y<sub>2</sub> &minus; y<sub>1</sub></div><div class="intmath svgHtml" style="top:64px;left:103px">distance = <i>d</i></div></svg>
+                </div> <!-- svgWrap -->
+                <p>Distance from (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) to (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>).</p>
+                </div>
+
+                <p>Using Pythagoras' Theorem we can develop a formula for the distance <i>d</i>.</p>
+
+
+                <h2>Distance Formula</h2>
+                <p>The distance between <span class="intmath">(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>)</span> and <span class="intmath">(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>)</span> is given by:</p>
+                <blockquote>
+                <p class="formula">`d=sqrt((x_2-x_1)^2+(y_2-y_1)^2`</p>
+                </blockquote>
+                <p><b>Note:</b> Don't worry about which point you choose for (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) (it can be the first or second point given), because the answer works out the same.</p>
+                <h2>Interactive Graph - Distance Formula</h2>
+                <p>You can explore the concept of distance formula in the following JSXGraph (it's not a fixed image).</p>
+                <p><b>Drag</b> either point A or point B to investigate how the distance formula works.</p>
+            </div>
+            <div class="col-sm-6 col-md-offset-3">
+                <div id="jxgbox" class="jxgbox explanation" style="overflow: hidden; position: relative;"><svg width="650" height="450" style="overflow: hidden; width: 650px; height: 450px;"><defs><filter id="jxgbox_f1" width="300%" height="300%" filterUnits="userSpaceOnUse"><feOffset result="offOut" in="SourceAlpha" dx="5" dy="5"></feOffset><feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur><feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend></filter><marker id="jxgbox_jxgBoard1L3TriangleStart" stroke="#666666" stroke-opacity="1" fill="#666666" fill-opacity="1" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker id="jxgbox_jxgBoard1L12TriangleStart" stroke="#666666" stroke-opacity="1" fill="#666666" fill-opacity="1" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker id="jxgbox_jxgBoard1L40TriangleStart" stroke="#5b8a9b" stroke-opacity="0.8" fill="#5b8a9b" fill-opacity="0.8" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker id="jxgbox_jxgBoard1L42TriangleStart" stroke="#5b8a9b" stroke-opacity="0.8" fill="#5b8a9b" fill-opacity="0.8" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><ellipse id="jxgbox_jxgBoard1P1" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P2" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="356" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P10" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P11" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="326" cy="199" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P39" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="475" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P41" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="326" cy="93" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse></g><g></g><g><line id="jxgbox_jxgBoard1L3" x1="4" y1="225.00000000000003" x2="636" y2="225.00000000000003" marker-end="url(#jxgbox_jxgBoard1L3TriangleStart)" stroke="#666666" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><path id="jxgbox_jxgBoard1L3_ticks_1" stroke-linecap="round" stroke-linejoin="round" style="position: absolute;" stroke="#666666" stroke-opacity="0.25" stroke-width="1" d="M 326 0 L 326 450 M 356 225 L 356 230 M 386 225 L 386 230 M 416 225 L 416 230 M 445 225 L 445 230 M 475 0 L 475 450 M 505 225 L 505 230 M 534 225 L 534 230 M 564 225 L 564 230 M 594 225 L 594 230 M 623 0 L 623 450 M 297 225 L 297 230 M 267 225 L 267 230 M 237 225 L 237 230 M 208 225 L 208 230 M 178 0 L 178 450 M 148 225 L 148 230 M 119 225 L 119 230 M 89 225 L 89 230 M 59 225 L 59 230 M 30 0 L 30 450 M 0 225 L 0 230 "></path><line id="jxgbox_jxgBoard1L12" x1="326.48401826484024" y1="446" x2="326.48401826484024" y2="14.000000000000028" marker-end="url(#jxgbox_jxgBoard1L12TriangleStart)" stroke="#666666" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><path id="jxgbox_jxgBoard1L12_ticks_1" stroke-linecap="round" stroke-linejoin="round" style="position: absolute;" stroke="#666666" stroke-opacity="0.25" stroke-width="1" d="M 0 225 L 650 225 M 326 199 L 331 199 M 326 172 L 331 172 M 326 146 L 331 146 M 326 120 L 331 120 M 0 93 L 650 93 M 326 67 L 331 67 M 326 41 L 331 41 M 326 14 L 331 14 M 326 251 L 331 251 M 326 278 L 331 278 M 326 304 L 331 304 M 326 330 L 331 330 M 0 357 L 650 357 M 326 383 L 331 383 M 326 409 L 331 409 M 326 436 L 331 436 "></path></g><g><polygon id="jxgbox_jxgBoard1Py21" fill="#ffff00" fill-opacity="0.3" stroke="none" points="326,225 326,225 326,225 326,225" display="none" style="position: absolute; visibility: hidden;"></polygon></g><g></g><g></g><g></g><g><line id="jxgbox_jxgBoard1L28" x1="489" y1="341" x2="148" y2="38" stroke="#ff00ff" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox_jxgBoard1L29" x1="148" y1="38" x2="148" y2="341" stroke="#2222ff" stroke-opacity="1" stroke-width="2px" fill-opacity="0" stroke-dasharray="5, 5" style="position: absolute;"></line><line id="jxgbox_jxgBoard1L30" x1="489" y1="341" x2="148" y2="341" stroke="#2222ff" stroke-opacity="1" stroke-width="2px" fill-opacity="0" stroke-dasharray="5, 5" style="position: absolute;"></line><line id="jxgbox_jxgBoard1L40" x1="0" y1="225.00000000000003" x2="640" y2="225.00000000000003" marker-end="url(#jxgbox_jxgBoard1L40TriangleStart)" stroke="#5b8a9b" stroke-opacity="0.8" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox_jxgBoard1L42" x1="326.48401826484024" y1="450" x2="326.48401826484024" y2="10" marker-end="url(#jxgbox_jxgBoard1L42TriangleStart)" stroke="#5b8a9b" stroke-opacity="0.8" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line></g><g></g><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><text id="jxgbox_jxgBoard1L3_ticks_11Label1" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="330.4840182648402px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">0</text><text id="jxgbox_jxgBoard1L3_ticks_16Label2" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="478.88584474885846px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">5</text><text id="jxgbox_jxgBoard1L3_ticks_111Label3" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="627.2876712328766px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">10</text><text id="jxgbox_jxgBoard1L3_ticks_116Label4" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="182.08219178082192px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">âˆ’5</text><text id="jxgbox_jxgBoard1L3_ticks_121Label5" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="33.68036529680364px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">âˆ’10</text><text id="jxgbox_jxgBoard1L12_ticks_11Label1" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="330.4840182648402px" text-anchor="start" y="234px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">0</text><text id="jxgbox_jxgBoard1L12_ticks_16Label2" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="330.4840182648402px" text-anchor="start" y="102.42105263157895px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">5</text><text id="jxgbox_jxgBoard1L12_ticks_114Label3" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="330.4840182648402px" text-anchor="start" y="365.57894736842104px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">âˆ’5</text><ellipse id="jxgbox_jxgBoard1P17" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P18" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P19" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P20" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard1P22" stroke="#ff00ff" stroke-opacity="1" stroke-width="2px" fill="#ff00ff" fill-opacity="1" cx="489" cy="341" rx="4" ry="4" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard1P24" stroke="#ff00ff" stroke-opacity="1" stroke-width="2px" fill="#ff00ff" fill-opacity="1" cx="148" cy="38" rx="4" ry="4" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard1P26" stroke="#ff0000" stroke-opacity="0" stroke-width="2px" fill="#ff0000" fill-opacity="0" cx="148" cy="341" rx="4" ry="4" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard1P37" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="326" cy="225" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><div class="JXGinfobox" id="jxgbox_jxgBoard1_infobox" display="none" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(187, 187, 187); opacity: 1; left: 469px; right: auto; bottom: auto; top: 309px; visibility: hidden;">(5.48, -4.41)</div><div id="jxgbox_navigationbar" style="color: rgb(51, 51, 51); background-color: transparent; padding: 2px; position: absolute; font-size: 14px; cursor: pointer; z-index: 100; right: 5px; bottom: 5px;"><span>&nbsp;â€“&nbsp;</span><span>&nbsp;o&nbsp;</span><span>&nbsp;+&nbsp;</span><span>&nbsp;â†&nbsp;</span><span>&nbsp;â†“&nbsp;</span><span>&nbsp;â†‘&nbsp;</span><span>&nbsp;â†’&nbsp;</span></div><div class="JXGtext" id="jxgbox_jxgBoard1P22Label" stroke-width="2px" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 499px; right: auto; bottom: auto; top: 324px;">A</div><div class="JXGtext" id="jxgbox_jxgBoard1P24Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 158px; right: auto; bottom: auto; top: 21px;">B</div><div class="JXGtext" id="jxgbox_jxgBoard1P26Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 158px; right: auto; bottom: auto; top: 324px;">C</div><div class="JXGtext" id="jxgbox_jxgBoard1T31" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 390px; right: auto; bottom: auto; top: 22px;"><p class="gborder minwidth">distance AB <br>= âˆš [(<i>x</i><sub>2</sub> âˆ’  <i>x</i><sub>1</sub>)<sup>2</sup> + (<i>y</i><sub>2</sub> âˆ’  <i>y</i><sub>1</sub>)<sup>2</sup>]<br>= âˆš [(5.5 âˆ’ -6)<sup>2</sup> + (7.1 âˆ’ -4.4)<sup>2</sup>] <br>= âˆš [11.5<sup>2</sup> +11.5<sup>2</sup>] <br>= 16.3</p></div><div class="JXGtext" id="jxgbox_jxgBoard1T32" stroke-width="2px" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 509px; right: auto; bottom: auto; top: 315px;"><p>(5.5, -4.4)</p></div><div class="JXGtext" id="jxgbox_jxgBoard1T33" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 168px; right: auto; bottom: auto; top: 12px;"><p>(-6.0, 7.1)</p></div><div class="JXGtext" id="jxgbox_jxgBoard1T34" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 168px; right: auto; bottom: auto; top: 310px;"><p>(-6.0, -4.4)</p></div><div class="JXGtext" id="jxgbox_jxgBoard1T35" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 118px; right: auto; bottom: auto; top: 158px;"><p><i>y</i><sub>2</sub> âˆ’  <i>y</i><sub>1</sub> <br>=  7.1 âˆ’ -4.4<br>= 11.5</p></div><div class="JXGtext" id="jxgbox_jxgBoard1T36" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 288px; right: auto; bottom: auto; top: 310px;"><p><i>x</i><sub>2</sub> âˆ’  <i>x</i><sub>1</sub> <br>=  5.5 âˆ’ -6 <br>= 11.5</p></div><div class="JXGtext" id="jxgbox_jxgBoard1P37Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div></div>
+
+            </div>
+        </div>
+    </div>
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2016. All Rights Reserved.</small>
+                    </p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'bootstrap/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'bootstrap/js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'bootstrap/js/jquery.flexslider-min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'bootstrap/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+    <script type="text/javascript"  src="{% static 'pulleys/distance_formula.js' %}"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+

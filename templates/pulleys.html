@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WikiVision_A algebra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiVision A_algebra</title>
+  	<!-- Facebook and Twitter integration
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+    -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/icomoon.css' %}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/themify-icons.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/magnific-popup.css' %}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.theme.default.min.css' %}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flexslider.css' %}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+
+        <!-- Pulley Files-->
+    <script type="text/javascript" async="" src="{% static 'pulleys/ASCIIMathTeXKaTeX-2016-06-17.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/katex.minjs-2017-13-01.js' %}"></script>
+
+    <script type="text/javascript" async="" src="{% static 'pulleys/ddivs-voting-2016-10-11.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jsxgraphcore-0.99.5.js' %}"></script>
+	<!-- Modernizr JS -->
+	<script src="{% static 'bootstrap/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="">WikiVision_A algebra</a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1 main-nav">
+					<ul>
+						<li><a href="{% url 'basepage' %}">Home</a></li>
+						<li class="active"><a href="{% url 'models' %}">Models</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="gtco-hero" class="js-fullheight"  data-section="home">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'bootstrap/images/cal1.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>WikiVision_A algebra</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/math_equations-wallpaper-1920x1080.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+                            <h2>Finding Derivatives and Integrals Of your linear Equations</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/cal2.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>Draw Graphs.</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+		<div class="gtco-section" id="gtco-services" data-section="services">
+			<div class="gtco-container">
+				<h1>Pulleys</h1>
+                <h2>An Application of Angular and Linear Velocity </h2>
+                <p>In the following math applet, change the radius of each pulley and observe the effect on the
+                  linear velocity of the belt and the angular velocity of each
+                  pulley. Click the "Start" button to begin the animation.</p>
+                  <p>Observe that:</p>
+                <ul>
+                 <li>The smaller pulley has the higher angular velocity; and</li>
+                 <li>The linear velocity for the outer edge of both the 2 wheels is the same. (It has to be, or the belt would
+                  break).</li>
+                </ul>
+                  </p>
+                  <p>Also, notice that the ratio of the angular velocities is the
+                  inverse of the ratio of the radius of the two pulleys. For example, if `r_1=5` and `r_2=2` (ratio `5/2`), the ratio of the angular velocities is `1.2/3 = 2/5`.</p>
+
+                <h3>Units</h3>
+                <p>In the following applet, the units are as follows:</p>
+                <ul>
+                <li>The radius is in meters.</li>
+                <li>The angular velocity is in radians/sec.</li>
+                <li>The linear velocity is in meters/second.</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-offset-3">
+                <div class="int" align="center" style="border:1px solid black;">
+                    <div class="info" align="center">
+                        <button id="goButt">Start</button>
+                    </div>
+                       <div id="jxgbox0" style="overflow: hidden; position: relative;"><svg width="660" height="120" style="overflow: hidden; width: 660px; height: 120px;"><defs><filter id="jxgbox0_f1" width="300%" height="300%" filterUnits="userSpaceOnUse"><feOffset result="offOut" in="SourceAlpha" dx="5" dy="5"></feOffset><feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur><feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend></filter></defs><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject></g><g></g><g></g><g><polygon id="jxgbox0_jxgBoard1Py5" fill="#ffff00" fill-opacity="0.3" stroke="none" points="208,288 208,288 208,288 208,288" display="none" style="position: absolute; visibility: hidden;"></polygon></g><g></g><g></g><g></g><g><line id="jxgbox0_jxgBoard1L8" x1="7" y1="12" x2="208" y2="12" stroke="#165a71" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox0_jxgBoard1L10" x1="7" y1="12" x2="171" y2="12" stroke="#165a71" stroke-opacity="1" stroke-width="3px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox0_jxgBoard1L14" x1="389" y1="12" x2="590" y2="12" stroke="#165a71" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox0_jxgBoard1L16" x1="389" y1="12" x2="444" y2="12" stroke="#165a71" stroke-opacity="1" stroke-width="3px" fill-opacity="0" style="position: absolute;"></line></g><g></g><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><ellipse id="jxgbox0_jxgBoard1P1" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="208" cy="288" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P2" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="208" cy="288" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P3" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="208" cy="288" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P4" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="208" cy="288" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P6" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="7" cy="12" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P7" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="208" cy="12" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P9" stroke="#f5f" stroke-opacity="1" stroke-width="2px" fill="#f5f" fill-opacity="1" cx="171.41552511415526" cy="12" rx="5" ry="5" style="position: absolute;"></ellipse><ellipse id="jxgbox0_jxgBoard1P12" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="389" cy="12" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P13" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="590" cy="12" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox0_jxgBoard1P15" stroke="#f5f" stroke-opacity="1" stroke-width="2px" fill="#f5f" fill-opacity="1" cx="443.56164383561645" cy="12" rx="5" ry="5" style="position: absolute;"></ellipse></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><div class="JXGinfobox" id="jxgbox0_jxgBoard1_infobox" display="none" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(187, 187, 187); opacity: 1; left: 208px; right: auto; bottom: auto; top: 281px; visibility: hidden;">0,0</div><div id="jxgbox0_navigationbar" style="color: rgb(51, 51, 51); background-color: transparent; padding: 2px; position: absolute; font-size: 14px; cursor: pointer; z-index: 100; right: 5px; bottom: 5px;"></div><div class="JXGtext" id="jxgbox0_jxgBoard1T11" stroke-width="2px" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(0, 0, 0); opacity: 1; left: 217px; right: auto; bottom: auto; top: 3px;">r<sub>1</sub> = 5.00</div><div class="JXGtext" id="jxgbox0_jxgBoard1T17" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(0, 0, 0); opacity: 1; left: 599px; right: auto; bottom: auto; top: 3px;">r<sub>2</sub> = 2.00</div><div class="JXGtext" id="jxgbox0_jxgBoard1T18" style="position: absolute; z-index: 9; font-size: 15px; color: black; opacity: 1; left: 7px; right: auto; bottom: auto; top: 39px;"><em>ω</em><sub>1</sub> = <span class="lin">angular velocity</span> = 1.20 rad/s</div><div class="JXGtext" id="jxgbox0_jxgBoard1T19" style="position: absolute; z-index: 9; font-size: 15px; color: black; opacity: 1; left: 389px; right: auto; bottom: auto; top: 39px;"><em>ω</em><sub>2</sub> = <span class="lin">angular velocity</span> = 3.00 rad/s</div><div class="JXGtext" id="jxgbox0_jxgBoard1T20" style="position: absolute; z-index: 9; font-size: 15px; color: black; opacity: 1; left: 7px; right: auto; bottom: auto; top: 80px;"><span class="lin"><strong>Linear velocity:</strong></span><br><em>v</em> = <em>r</em><sub>1</sub> × <em>ω</em><sub>1</sub> = 5.00 × 1.20 = 6 m/s</div><div class="JXGtext" id="jxgbox0_jxgBoard1T21" style="position: absolute; z-index: 9; font-size: 15px; color: black; opacity: 1; left: 389px; right: auto; bottom: auto; top: 80px;"><span class="lin"><strong>Linear velocity:</strong></span><br><em>v</em> = <em>r</em><sub>2</sub> × <em>ω</em><sub>2</sub> = 2.00 × 3.00 = 6 m/s</div></div>
+                       <div id="jxgbox" align="center" class="jxgbox explanation" style="overflow: hidden; position: relative;"><svg alignment-baseline="central" width="535" height="250" style="overflow: hidden; width: 535px; height: 250px;"><defs><filter id="jxgbox_f1" width="300%" height="300%" filterUnits="userSpaceOnUse"><feOffset result="offOut" in="SourceAlpha" dx="5" dy="5"></feOffset><feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur><feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend></filter></defs><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><ellipse id="jxgbox_jxgBoard58344P10" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P12" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="411" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse></g><g></g><g></g><g><polygon id="jxgbox_jxgBoard58344Py5" fill="#ffff00" fill-opacity="0.3" stroke="none" points="124,124 124,124 124,124 124,124" display="none" style="position: absolute; visibility: hidden;"></polygon></g><g></g><g></g><g><ellipse id="jxgbox_jxgBoard58344C11" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#e5edef" fill-opacity="1" cx="124" cy="124" rx="95.53571428571429" ry="95.53571428571429" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344C13" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#e5edef" fill-opacity="1" cx="411" cy="124" rx="38.21428571428571" ry="38.21428571428571" style="position: absolute;"></ellipse></g><g><line id="jxgbox_jxgBoard58344L30" x1="143" y1="30" x2="418" y2="87" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox_jxgBoard58344L31" x1="143" y1="218" x2="418" y2="162" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line></g><g></g><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><ellipse id="jxgbox_jxgBoard58344P1" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P2" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P3" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P4" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P6" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#165a71" fill-opacity="1" cx="124" cy="124" rx="6" ry="6" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P8" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#165a71" fill-opacity="1" cx="411" cy="124" rx="6" ry="6" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P14" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#fff" fill-opacity="1" cx="66.87666068379733" cy="124.63275732072923" rx="11" ry="11" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P16" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#fff" fill-opacity="1" cx="181.5161964590598" cy="123.76009982212791" rx="11" ry="11" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P18" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#fff" fill-opacity="1" cx="411.23987805614706" cy="147.12084839575203" rx="6" ry="6" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P20" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill="#fff" fill-opacity="1" cx="410.36726480099577" cy="101.27200874710509" rx="6" ry="6" style="position: absolute;"></ellipse><ellipse id="jxgbox_jxgBoard58344P22" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P24" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P26" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P28" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="124" cy="124" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox_jxgBoard58344P32" stroke="#d00" stroke-opacity="1" stroke-width="2px" fill="#d00" fill-opacity="1" cx="230.57831249999998" cy="48.214738179472064" rx="4" ry="4" style="position: absolute;"></ellipse></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><div class="JXGinfobox" id="jxgbox_jxgBoard58344_infobox" display="none" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(187, 187, 187); opacity: 1; left: 124px; right: auto; bottom: auto; top: 117px; visibility: hidden;" stroke-width="2px">0,0</div><div id="jxgbox_navigationbar" style="color: rgb(51, 51, 51); background-color: transparent; padding: 2px; position: absolute; font-size: 14px; cursor: pointer; z-index: 100; right: 5px; bottom: 5px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P6Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 134px; right: auto; bottom: auto; top: 114px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P8Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 421px; right: auto; bottom: auto; top: 114px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P14Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 76px; right: auto; bottom: auto; top: 114px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P16Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 191px; right: auto; bottom: auto; top: 113px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P18Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 421px; right: auto; bottom: auto; top: 137px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P20Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 420px; right: auto; bottom: auto; top: 91px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P22Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P24Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P26Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P28Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344P32Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 240px; right: auto; bottom: auto; top: 38px;"></div><div class="JXGtext" id="jxgbox_jxgBoard58344T34" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 468px; right: auto; bottom: auto; top: 238px;"><span class="fps lin">fps = 0</span></div></div>
+                       <p class="copy">Copyright © www.wikivision.com </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2016. All Rights Reserved.</small>
+                    </p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'bootstrap/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'bootstrap/js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'bootstrap/js/jquery.flexslider-min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'bootstrap/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+    <script type="text/javascript"  src="{% static 'pulleys/pulley_1.js' %}"></script>
+	</body>
+</html>
+
+
+
+
+
+
+

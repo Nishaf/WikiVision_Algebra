@@ -1,0 +1,1814 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WikiVision_A algebra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiVision A_algebra</title>
+  	<!-- Facebook and Twitter integration
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+    -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/icomoon.css' %}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/themify-icons.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/magnific-popup.css' %}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.theme.default.min.css' %}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flexslider.css' %}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'pulleys/katex.min-2017-01-19.css' %}">
+    <link rel="stylesheet" href="{% static 'pulleys/math2016-07-23.css' %}">
+    <link rel="stylesheet" href="{% static 'pulleys/trig-ratios.css' %}">
+    <!-- Pulley Files-->
+    <script type="text/javascript"  src="{% static 'pulleys/trig-ratio.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/ASCIIMathTeXKaTeX-2016-06-17.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/katex.minjs-2017-13-01.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/katex.min-2017-01-19.css' %}"></script>
+
+    <script type="text/javascript" src="{% static 'pulleys/ddivs-voting-2016-10-11.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/jsxgraphcore-0.99.5.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pulleys/quant.js' %}"></script>
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'bootstrap/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+	<![endif]-->
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="">WikiVision_A algebra</a></div>
+				</div>
+				<div class="col-xs-8 text-right">
+					<ul>
+						<li><a href="{% url 'basepage' %}">Home</a></li>
+						<li class="active"><a href="{% url 'models' %}">Models</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="gtco-hero" class="js-fullheight"  data-section="home">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'bootstrap/images/cal1.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>WikiVision_A algebra</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/math_equations-wallpaper-1920x1080.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+                            <h2>Finding Derivatives and Integrals Of your linear Equations</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/cal2.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>Draw Graphs.</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+		<div class="gtco-section" id="gtco-services" data-section="services">
+			<div class="gtco-container">
+				<h1>Trigonometric Ratios - Interactive Graph</h1>
+                <p>We claim that these 2 trigonometric identities are correct, for any angle. </p>
+                <blockquote>
+                <p>`tan theta = (sin theta) / (cos theta)`, and</p>
+                <p>`sin^2 theta + cos^2 theta = 1`</p>
+                </blockquote>
+                <h2>Interactive Graph - Circle and trig identities</h2>
+                <p>You can explore the identities `tan theta = (sin theta) / (cos theta)` and `sin^2 theta + cos^2 theta = 1` in the following JSXGraph (it's not a fixed image).</p>
+                <h3>Things to do</h3>
+                <p>1. Drag point P around the circle.</p>
+                <p>2. Observe the values given for `sin theta`, `cos theta` (and their squares), and `tan theta` for different angles. </p>
+                <p>3. Observe the `x`- and `y`-values for the point P in the (light gray) tooltip that appears as you drag.</p>
+                <p>Hopefully you can see that:</p>
+                <blockquote><p>`tan theta = (sin theta) / (cos theta)`</p></blockquote>
+                <p>and</p>
+                <blockquote><p>`sin^2 theta + cos^2 theta = 1`</p></blockquote>
+                <p>for any angle `theta`.</p>
+            </div>
+            <div class="col-sm-6 col-md-offset-3">
+                <div class="interactive">
+                    <div id="jxgbox1" class="jxgbox" style="overflow: hidden; position: relative;"><svg width="350" height="450" style="overflow: hidden; width: 350px; height: 450px;"><defs><filter id="jxgbox1_f1" width="300%" height="300%" filterUnits="userSpaceOnUse"><feOffset result="offOut" in="SourceAlpha" dx="5" dy="5"></feOffset><feGaussianBlur result="blurOut" in="offOut" stdDeviation="3"></feGaussianBlur><feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend></filter><marker id="jxgbox1_jxgBoard1L3TriangleStart" stroke="#666666" stroke-opacity="1" fill="#666666" fill-opacity="1" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker id="jxgbox1_jxgBoard1L18TriangleStart" stroke="#666666" stroke-opacity="1" fill="#666666" fill-opacity="1" stroke-width="0" orient="auto" markerUnits="strokeWidth" viewBox="-1 -1 10 10" markerHeight="10" markerWidth="10" refY="5" refX="0" style="position: absolute;"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><ellipse id="jxgbox1_jxgBoard1P1" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P2" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="205" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P16" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P17" stroke="#0000ff" stroke-opacity="1" stroke-width="2px" fill="red" fill-opacity="1" cx="175" cy="208" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse></g><g></g><g><line id="jxgbox1_jxgBoard1L3" x1="4" y1="237.28813559322032" x2="336" y2="237.28813559322032" marker-end="url(#jxgbox1_jxgBoard1L3TriangleStart)" stroke="#666666" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><path id="jxgbox1_jxgBoard1L3_ticks_1" stroke-linecap="round" stroke-linejoin="round" style="position: absolute;" stroke="#666666" stroke-opacity="0.25" stroke-width="1" d="M 175 0 L 175 450 M 181 237 L 181 242 M 187 237 L 187 242 M 193 237 L 193 242 M 199 237 L 199 242 M 205 0 L 205 450 M 211 237 L 211 242 M 217 237 L 217 242 M 222 237 L 222 242 M 228 237 L 228 242 M 234 0 L 234 450 M 240 237 L 240 242 M 246 237 L 246 242 M 252 237 L 252 242 M 258 237 L 258 242 M 264 0 L 264 450 M 270 237 L 270 242 M 276 237 L 276 242 M 282 237 L 282 242 M 288 237 L 288 242 M 294 0 L 294 450 M 300 237 L 300 242 M 306 237 L 306 242 M 311 237 L 311 242 M 317 237 L 317 242 M 323 0 L 323 450 M 329 237 L 329 242 M 335 237 L 335 242 M 341 237 L 341 242 M 347 237 L 347 242 M 169 237 L 169 242 M 163 237 L 163 242 M 157 237 L 157 242 M 151 237 L 151 242 M 145 0 L 145 450 M 139 237 L 139 242 M 133 237 L 133 242 M 128 237 L 128 242 M 122 237 L 122 242 M 116 0 L 116 450 M 110 237 L 110 242 M 104 237 L 104 242 M 98 237 L 98 242 M 92 237 L 92 242 M 86 0 L 86 450 M 80 237 L 80 242 M 74 237 L 74 242 M 68 237 L 68 242 M 62 237 L 62 242 M 56 0 L 56 450 M 50 237 L 50 242 M 44 237 L 44 242 M 39 237 L 39 242 M 33 237 L 33 242 M 27 0 L 27 450 M 21 237 L 21 242 M 15 237 L 15 242 M 9 237 L 9 242 M 3 237 L 3 242 "></path><line id="jxgbox1_jxgBoard1L18" x1="175" y1="446" x2="175" y2="14" marker-end="url(#jxgbox1_jxgBoard1L18TriangleStart)" stroke="#666666" stroke-opacity="1" stroke-width="1px" fill-opacity="0" style="position: absolute;"></line><path id="jxgbox1_jxgBoard1L18_ticks_1" stroke-linecap="round" stroke-linejoin="round" style="position: absolute;" stroke="#666666" stroke-opacity="0.25" stroke-width="1" d="M 0 237 L 350 237 M 175 231 L 180 231 M 175 225 L 180 225 M 175 219 L 180 219 M 175 214 L 180 214 M 0 208 L 350 208 M 175 202 L 180 202 M 175 196 L 180 196 M 175 190 L 180 190 M 175 184 L 180 184 M 0 178 L 350 178 M 175 172 L 180 172 M 175 166 L 180 166 M 175 160 L 180 160 M 175 154 L 180 154 M 0 148 L 350 148 M 175 142 L 180 142 M 175 136 L 180 136 M 175 131 L 180 131 M 175 125 L 180 125 M 0 119 L 350 119 M 175 113 L 180 113 M 175 107 L 180 107 M 175 101 L 180 101 M 175 95 L 180 95 M 0 89 L 350 89 M 175 83 L 180 83 M 175 77 L 180 77 M 175 71 L 180 71 M 175 65 L 180 65 M 0 59 L 350 59 M 175 53 L 180 53 M 175 47 L 180 47 M 175 42 L 180 42 M 175 36 L 180 36 M 0 30 L 350 30 M 175 24 L 180 24 M 175 18 L 180 18 M 175 12 L 180 12 M 175 6 L 180 6 M 175 243 L 180 243 M 175 249 L 180 249 M 175 255 L 180 255 M 175 261 L 180 261 M 0 267 L 350 267 M 175 273 L 180 273 M 175 279 L 180 279 M 175 285 L 180 285 M 175 291 L 180 291 M 0 297 L 350 297 M 175 303 L 180 303 M 175 308 L 180 308 M 175 314 L 180 314 M 175 320 L 180 320 M 0 326 L 350 326 M 175 332 L 180 332 M 175 338 L 180 338 M 175 344 L 180 344 M 175 350 L 180 350 M 0 356 L 350 356 M 175 362 L 180 362 M 175 368 L 180 368 M 175 374 L 180 374 M 175 380 L 180 380 M 0 386 L 350 386 M 175 392 L 180 392 M 175 397 L 180 397 M 175 403 L 180 403 M 175 409 L 180 409 M 0 415 L 350 415 M 175 421 L 180 421 M 175 427 L 180 427 M 175 433 L 180 433 M 175 439 L 180 439 M 0 445 L 350 445 "></path></g><g><polygon id="jxgbox1_jxgBoard1Py39" fill="#ffff00" fill-opacity="0.3" stroke="none" points="175,237 175,237 175,237 175,237" display="none" style="position: absolute; visibility: hidden;"></polygon><path id="jxgbox1_jxgBoard1G53" stroke-linecap="round" stroke-linejoin="round" stroke="#FF7F00" stroke-opacity="1" stroke-width="1px" fill="#FF7F00" fill-opacity="0.3" d=" M 175 237.28813559322032 C 184.8771186440678 237.28813559322032 194.75423728813558 237.28813559322032 204.66101694915255 237.28813559322032 C 204.66101694915255 220.9068082677307 191.38132732548962 207.62711864406776 175 207.62711864406776 C 172.05009234521273 207.62711864406776 169.11668703236157 208.06717547630245 166.29663073318562 208.93276062015065 C 169.1948526990348 218.37510048618284 172.093074664884 227.81744035221504 175 237.28813559322032" style="position: absolute;"></path></g><g></g><g></g><g><ellipse id="jxgbox1_jxgBoard1C44" stroke="#165a71" stroke-opacity="1" stroke-width="2px" fill-opacity="0" cx="175" cy="237" rx="148.3050847457627" ry="148.3050847457627" style="position: absolute;"></ellipse></g><g><line id="jxgbox1_jxgBoard1L50" x1="175" y1="237" x2="131" y2="96" stroke="#dd00dd" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox1_jxgBoard1L51" x1="131" y1="237" x2="131" y2="96" stroke="#00dddd" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line><line id="jxgbox1_jxgBoard1L52" x1="175" y1="237" x2="131" y2="237" stroke="blue" stroke-opacity="1" stroke-width="2px" fill-opacity="0" style="position: absolute;"></line></g><g><path id="jxgbox1_jxgBoard1G55" stroke-linecap="round" stroke-linejoin="round" stroke="#0000ff" stroke-opacity="1" stroke-width="1px" fill-opacity="0" d=" M 175 237.28813559322032" display="none" style="position: absolute; visibility: hidden;"></path></g><g><foreignObject x="0" y="0" width="100%" height="100%"></foreignObject><text id="jxgbox1_jxgBoard1L3_ticks_11Label1" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">0</text><text id="jxgbox1_jxgBoard1L3_ticks_16Label2" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="208.66101694915255px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">1</text><text id="jxgbox1_jxgBoard1L3_ticks_111Label3" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="238.32203389830508px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">2</text><text id="jxgbox1_jxgBoard1L3_ticks_116Label4" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="267.98305084745766px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">3</text><text id="jxgbox1_jxgBoard1L3_ticks_121Label5" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="297.6440677966102px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">4</text><text id="jxgbox1_jxgBoard1L3_ticks_126Label6" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="327.30508474576277px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">5</text><text id="jxgbox1_jxgBoard1L3_ticks_135Label7" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="149.33898305084745px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">−1</text><text id="jxgbox1_jxgBoard1L3_ticks_140Label8" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="119.67796610169492px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">−2</text><text id="jxgbox1_jxgBoard1L3_ticks_145Label9" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="90.01694915254237px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−3</text><text id="jxgbox1_jxgBoard1L3_ticks_150Label10" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="60.35593220338981px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">−4</text><text id="jxgbox1_jxgBoard1L3_ticks_155Label11" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="30.69491525423726px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">−5</text><text id="jxgbox1_jxgBoard1L18_ticks_11Label1" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="246.28813559322032px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">0</text><text id="jxgbox1_jxgBoard1L18_ticks_16Label2" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="216.62711864406776px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">1</text><text id="jxgbox1_jxgBoard1L18_ticks_111Label3" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="186.96610169491524px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">2</text><text id="jxgbox1_jxgBoard1L18_ticks_116Label4" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="157.30508474576268px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">3</text><text id="jxgbox1_jxgBoard1L18_ticks_121Label5" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="127.64406779661013px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">4</text><text id="jxgbox1_jxgBoard1L18_ticks_126Label6" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="97.98305084745758px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">5</text><text id="jxgbox1_jxgBoard1L18_ticks_131Label7" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="68.322033898305px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">6</text><text id="jxgbox1_jxgBoard1L18_ticks_136Label8" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="38.66101694915244px" dominant-baseline="middle" style="position: absolute; font-size: 12px;" stroke-width="2px">7</text><text id="jxgbox1_jxgBoard1L18_ticks_145Label9" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="275.9491525423729px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−1</text><text id="jxgbox1_jxgBoard1L18_ticks_150Label10" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="305.6101694915254px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−2</text><text id="jxgbox1_jxgBoard1L18_ticks_155Label11" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="335.271186440678px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−3</text><text id="jxgbox1_jxgBoard1L18_ticks_160Label12" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="364.93220338983053px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−4</text><text id="jxgbox1_jxgBoard1L18_ticks_165Label13" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="394.5932203389831px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−5</text><text id="jxgbox1_jxgBoard1L18_ticks_170Label14" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="424.25423728813564px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−6</text><text id="jxgbox1_jxgBoard1L18_ticks_175Label15" class="JXGtext" xml:space="preserve" fill="black" fill-opacity="1" x="179px" text-anchor="start" y="453.9152542372882px" dominant-baseline="middle" style="position: absolute; font-size: 12px;">−7</text><ellipse id="jxgbox1_jxgBoard1P35" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P36" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P37" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P38" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P40" stroke="blue" stroke-opacity="1" stroke-width="2px" fill="blue" fill-opacity="1" cx="175" cy="237" rx="2" ry="2" style="position: absolute;"></ellipse><ellipse id="jxgbox1_jxgBoard1P42" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="323" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P45" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff00ff" fill-opacity="1" cx="131.48315366592823" cy="95.51126072787198" rx="4" ry="4" style="position: absolute;"></ellipse><ellipse id="jxgbox1_jxgBoard1P48" stroke="#ff0000" stroke-opacity="1" stroke-width="2px" fill="#ff0000" fill-opacity="1" cx="175" cy="237" rx="4" ry="4" display="none" style="position: absolute; visibility: hidden;"></ellipse><ellipse id="jxgbox1_jxgBoard1P56" stroke="none" stroke-opacity="1" stroke-width="2px" fill="black" fill-opacity="1" cx="175" cy="237" rx="3" ry="3" display="none" style="position: absolute; visibility: hidden;"></ellipse></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><div class="JXGinfobox" id="jxgbox1_jxgBoard1_infobox" display="none" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(187, 187, 187); opacity: 1; left: 111px; right: auto; bottom: auto; top: 63px; visibility: hidden;" stroke-width="2px">(-1.47, 4.78)</div><div id="jxgbox1_navigationbar" style="color: rgb(51, 51, 51); background-color: transparent; padding: 2px; position: absolute; font-size: 14px; cursor: pointer; z-index: 100; right: 5px; bottom: 5px;"></div><div class="JXGtext" id="jxgbox1_jxgBoard1P40Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 185px; right: auto; bottom: auto; top: 227px;" stroke-width="2px"></div><div class="JXGtext" id="jxgbox1_jxgBoard1P42Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox1_jxgBoard1P45Label" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 141px; right: auto; bottom: auto; top: 78px;" stroke-width="2px">P</div><div class="JXGtext" id="jxgbox1_jxgBoard1P48Label" display="none" style="position: absolute; z-index: 9; visibility: hidden;"></div><div class="JXGtext" id="jxgbox1_jxgBoard1G53Label" style="position: absolute; z-index: 9; font-size: 12px; color: rgb(0, 0, 255); opacity: 1; left: 200px; right: auto; bottom: auto; top: 197px;">θ</div><div class="JXGtext" id="jxgbox1_jxgBoard1T57" style="position: absolute; z-index: 9; font-size: 12px; color: black; opacity: 1; left: 196px; right: auto; bottom: auto; top: 35px;"><p>θ = 1.9 radians<br>θ = 107.1°</p></div></div>
+
+
+  <div id="output">
+   <p>
+    <span id="mathId0">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mi>
+            tan
+           </mi>
+           <mrow>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               o
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+             </mtext>
+            </mrow>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               a
+              </mi>
+              <mi mathvariant="normal">
+               d
+              </mi>
+              <mi mathvariant="normal">
+               j
+              </mi>
+             </mtext>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              4
+             </mn>
+             <mi mathvariant="normal">
+              .
+             </mi>
+             <mn>
+              7
+             </mn>
+             <mn>
+              8
+             </mn>
+            </mrow>
+            <mrow>
+             <mo>
+              −
+             </mo>
+             <mrow>
+              <mrow>
+               <mn>
+                1
+               </mn>
+               <mi mathvariant="normal">
+                .
+               </mi>
+               <mn>
+                4
+               </mn>
+               <mn>
+                7
+               </mn>
+              </mrow>
+             </mrow>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mo>
+            −
+           </mo>
+           <mrow>
+            <mn>
+             3
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             2
+            </mn>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle 	an{	heta}=rac{	ext{opp}}{	ext{adj}}=rac{4.78}{ -{{1.47}}}=-{3.26}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 1.32144em;">
+       </span>
+       <span class="strut bottom" style="height: 2.20188em; vertical-align: -0.88044em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mop reset-textstyle displaystyle textstyle uncramped">
+         tan
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord text textstyle cramped">
+               <span class="mord mathrm">
+                adj
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord text textstyle uncramped">
+               <span class="mord mathrm">
+                opp
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord">
+               −
+              </span>
+              <span class="mord textstyle cramped">
+               <span class="mord textstyle cramped">
+                <span class="mord mathrm">
+                 1
+                </span>
+                <span class="mord mathrm">
+                 .
+                </span>
+                <span class="mord mathrm">
+                 4
+                </span>
+                <span class="mord mathrm">
+                 7
+                </span>
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord mathrm">
+               4
+              </span>
+              <span class="mord mathrm">
+               .
+              </span>
+              <span class="mord mathrm">
+               7
+              </span>
+              <span class="mord mathrm">
+               8
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         −
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          3
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          2
+         </span>
+         <span class="mord mathrm">
+          6
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+    <span id="mathId1">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mi>
+            sin
+           </mi>
+           <mrow>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               o
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+             </mtext>
+            </mrow>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               h
+              </mi>
+              <mi mathvariant="normal">
+               y
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+             </mtext>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              4
+             </mn>
+             <mi mathvariant="normal">
+              .
+             </mi>
+             <mn>
+              7
+             </mn>
+             <mn>
+              8
+             </mn>
+            </mrow>
+            <mrow>
+             <mrow>
+              <mn>
+               5
+              </mn>
+             </mrow>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             9
+            </mn>
+            <mn>
+             6
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle \sin{	heta}=rac{	ext{opp}}{	ext{hyp}}=rac{4.78}{{5}}={0.96}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 1.32144em;">
+       </span>
+       <span class="strut bottom" style="height: 2.20188em; vertical-align: -0.88044em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mop reset-textstyle displaystyle textstyle uncramped">
+         sin
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord text textstyle cramped">
+               <span class="mord mathrm">
+                hyp
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord text textstyle uncramped">
+               <span class="mord mathrm">
+                opp
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord textstyle cramped">
+               <span class="mord mathrm">
+                5
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord mathrm">
+               4
+              </span>
+              <span class="mord mathrm">
+               .
+              </span>
+              <span class="mord mathrm">
+               7
+              </span>
+              <span class="mord mathrm">
+               8
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+         <span class="mord mathrm">
+          6
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+    <span id="mathId2">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mi>
+            cos
+           </mi>
+           <mrow>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               a
+              </mi>
+              <mi mathvariant="normal">
+               d
+              </mi>
+              <mi mathvariant="normal">
+               j
+              </mi>
+             </mtext>
+            </mrow>
+            <mrow>
+             <mtext>
+              <mi mathvariant="normal">
+               h
+              </mi>
+              <mi mathvariant="normal">
+               y
+              </mi>
+              <mi mathvariant="normal">
+               p
+              </mi>
+             </mtext>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mo>
+            −
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              1
+             </mn>
+             <mi mathvariant="normal">
+              .
+             </mi>
+             <mn>
+              4
+             </mn>
+             <mn>
+              7
+             </mn>
+            </mrow>
+            <mrow>
+             <mrow>
+              <mn>
+               5
+              </mn>
+             </mrow>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mo>
+            −
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             2
+            </mn>
+            <mn>
+             9
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle \cos{	heta}=rac{	ext{adj}}{	ext{hyp}}=-rac{1.47}{{5}}=-{0.29}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 1.37144em;">
+       </span>
+       <span class="strut bottom" style="height: 2.25188em; vertical-align: -0.88044em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mop reset-textstyle displaystyle textstyle uncramped">
+         cos
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord text textstyle cramped">
+               <span class="mord mathrm">
+                hyp
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord text textstyle uncramped">
+               <span class="mord mathrm">
+                adj
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         −
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord textstyle cramped">
+               <span class="mord mathrm">
+                5
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord mathrm">
+               1
+              </span>
+              <span class="mord mathrm">
+               .
+              </span>
+              <span class="mord mathrm">
+               4
+              </span>
+              <span class="mord mathrm">
+               7
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         −
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          2
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+    <span id="mathId3">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mfrac>
+            <mrow>
+             <mrow>
+              <mi>
+               sin
+              </mi>
+              <mrow>
+               <mi>
+                θ
+               </mi>
+              </mrow>
+             </mrow>
+            </mrow>
+            <mrow>
+             <mrow>
+              <mi>
+               cos
+              </mi>
+              <mrow>
+               <mi>
+                θ
+               </mi>
+              </mrow>
+             </mrow>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mfrac>
+            <mrow>
+             <mn>
+              0
+             </mn>
+             <mi mathvariant="normal">
+              .
+             </mi>
+             <mn>
+              9
+             </mn>
+             <mn>
+              6
+             </mn>
+            </mrow>
+            <mrow>
+             <mo>
+              −
+             </mo>
+             <mrow>
+              <mrow>
+               <mn>
+                0
+               </mn>
+               <mi mathvariant="normal">
+                .
+               </mi>
+               <mn>
+                2
+               </mn>
+               <mn>
+                9
+               </mn>
+              </mrow>
+             </mrow>
+            </mrow>
+           </mfrac>
+           <mo>
+            =
+           </mo>
+           <mo>
+            −
+           </mo>
+           <mrow>
+            <mn>
+             3
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             2
+            </mn>
+            <mn>
+             6
+            </mn>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mi>
+            tan
+           </mi>
+           <mrow>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystylerac{ \sin{	heta}}}{ \cos{	heta}}}=rac{0.96}{ -{{0.29}}}=-{3.26}= 	an{	heta}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 1.37144em;">
+       </span>
+       <span class="strut bottom" style="height: 2.14077em; vertical-align: -0.76933em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord textstyle cramped">
+               <span class="mop">
+                cos
+               </span>
+               <span class="mord textstyle cramped">
+                <span class="mord mathit" style="margin-right: 0.02778em;">
+                 θ
+                </span>
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord textstyle uncramped">
+               <span class="mop">
+                sin
+               </span>
+               <span class="mord textstyle uncramped">
+                <span class="mord mathit" style="margin-right: 0.02778em;">
+                 θ
+                </span>
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         <span class="mopen sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+         <span class="mfrac">
+          <span class="vlist">
+           <span class="" style="top: 0.686em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle cramped">
+             <span class="mord textstyle cramped">
+              <span class="mord">
+               −
+              </span>
+              <span class="mord textstyle cramped">
+               <span class="mord textstyle cramped">
+                <span class="mord mathrm">
+                 0
+                </span>
+                <span class="mord mathrm">
+                 .
+                </span>
+                <span class="mord mathrm">
+                 2
+                </span>
+                <span class="mord mathrm">
+                 9
+                </span>
+               </span>
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="" style="top: -0.23em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped frac-line">
+            </span>
+           </span>
+           <span class="" style="top: -0.677em;">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            <span class="reset-textstyle textstyle uncramped">
+             <span class="mord textstyle uncramped">
+              <span class="mord mathrm">
+               0
+              </span>
+              <span class="mord mathrm">
+               .
+              </span>
+              <span class="mord mathrm">
+               9
+              </span>
+              <span class="mord mathrm">
+               6
+              </span>
+             </span>
+            </span>
+           </span>
+           <span class="baseline-fix">
+            <span class="fontsize-ensurer reset-size5 size5">
+             <span class="" style="font-size: 0em;">
+              ​
+             </span>
+            </span>
+            ​
+           </span>
+          </span>
+         </span>
+         <span class="mclose sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter">
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord reset-textstyle displaystyle textstyle uncramped">
+         −
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          3
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          2
+         </span>
+         <span class="mord mathrm">
+          6
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mop reset-textstyle displaystyle textstyle uncramped">
+         tan
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+   </p>
+   <p>
+    Also:
+   </p>
+   <p>
+    <span id="mathId4">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               sin
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             9
+            </mn>
+            <mn>
+             1
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle{{\sin}^{2}	heta}={0.91}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 0.864108em;">
+       </span>
+       <span class="strut bottom" style="height: 0.864108em; vertical-align: 0em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord">
+          <span class="mord displaystyle textstyle uncramped">
+           <span class="mop">
+            sin
+           </span>
+          </span>
+          <span class="msupsub">
+           <span class="vlist">
+            <span class="" style="top: -0.413em; margin-right: 0.05em;">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             <span class="reset-textstyle scriptstyle uncramped mtight">
+              <span class="mord scriptstyle uncramped mtight">
+               <span class="mord mathrm mtight">
+                2
+               </span>
+              </span>
+             </span>
+            </span>
+            <span class="baseline-fix">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             ​
+            </span>
+           </span>
+          </span>
+         </span>
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+         <span class="mord mathrm">
+          1
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+    <span id="mathId5">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               cos
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             0
+            </mn>
+            <mn>
+             9
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle{{\cos}^{2}	heta}={0.09}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 0.864108em;">
+       </span>
+       <span class="strut bottom" style="height: 0.864108em; vertical-align: 0em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord">
+          <span class="mord displaystyle textstyle uncramped">
+           <span class="mop">
+            cos
+           </span>
+          </span>
+          <span class="msupsub">
+           <span class="vlist">
+            <span class="" style="top: -0.413em; margin-right: 0.05em;">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             <span class="reset-textstyle scriptstyle uncramped mtight">
+              <span class="mord scriptstyle uncramped mtight">
+               <span class="mord mathrm mtight">
+                2
+               </span>
+              </span>
+             </span>
+            </span>
+            <span class="baseline-fix">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             ​
+            </span>
+           </span>
+          </span>
+         </span>
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+    <br/>
+    <br/>
+    <span id="mathId6">
+     <span class="katex">
+      <span class="katex-mathml">
+       <math>
+        <semantics>
+         <mrow>
+          <mstyle displaystyle="true" scriptlevel="0">
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               sin
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            +
+           </mo>
+           <mrow>
+            <msup>
+             <mrow>
+              <mi>
+               cos
+              </mi>
+             </mrow>
+             <mrow>
+              <mn>
+               2
+              </mn>
+             </mrow>
+            </msup>
+            <mi>
+             θ
+            </mi>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             9
+            </mn>
+            <mn>
+             1
+            </mn>
+           </mrow>
+           <mo>
+            +
+           </mo>
+           <mrow>
+            <mn>
+             0
+            </mn>
+            <mi mathvariant="normal">
+             .
+            </mi>
+            <mn>
+             0
+            </mn>
+            <mn>
+             9
+            </mn>
+           </mrow>
+           <mo>
+            =
+           </mo>
+           <mrow>
+            <mn>
+             1
+            </mn>
+           </mrow>
+          </mstyle>
+         </mrow>
+         <annotation encoding="application/x-tex">
+          \displaystyle{{\sin}^{2}	heta}+{{\cos}^{2}	heta}={0.91}+{0.09}={1}
+         </annotation>
+        </semantics>
+       </math>
+      </span>
+      <span aria-hidden="true" class="katex-html">
+       <span class="strut" style="height: 0.864108em;">
+       </span>
+       <span class="strut bottom" style="height: 0.947438em; vertical-align: -0.08333em;">
+       </span>
+       <span class="base textstyle uncramped">
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord">
+          <span class="mord displaystyle textstyle uncramped">
+           <span class="mop">
+            sin
+           </span>
+          </span>
+          <span class="msupsub">
+           <span class="vlist">
+            <span class="" style="top: -0.413em; margin-right: 0.05em;">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             <span class="reset-textstyle scriptstyle uncramped mtight">
+              <span class="mord scriptstyle uncramped mtight">
+               <span class="mord mathrm mtight">
+                2
+               </span>
+              </span>
+             </span>
+            </span>
+            <span class="baseline-fix">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             ​
+            </span>
+           </span>
+          </span>
+         </span>
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mbin reset-textstyle displaystyle textstyle uncramped">
+         +
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord">
+          <span class="mord displaystyle textstyle uncramped">
+           <span class="mop">
+            cos
+           </span>
+          </span>
+          <span class="msupsub">
+           <span class="vlist">
+            <span class="" style="top: -0.413em; margin-right: 0.05em;">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             <span class="reset-textstyle scriptstyle uncramped mtight">
+              <span class="mord scriptstyle uncramped mtight">
+               <span class="mord mathrm mtight">
+                2
+               </span>
+              </span>
+             </span>
+            </span>
+            <span class="baseline-fix">
+             <span class="fontsize-ensurer reset-size5 size5">
+              <span class="" style="font-size: 0em;">
+               ​
+              </span>
+             </span>
+             ​
+            </span>
+           </span>
+          </span>
+         </span>
+         <span class="mord mathit" style="margin-right: 0.02778em;">
+          θ
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+         <span class="mord mathrm">
+          1
+         </span>
+        </span>
+        <span class="mbin reset-textstyle displaystyle textstyle uncramped">
+         +
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          .
+         </span>
+         <span class="mord mathrm">
+          0
+         </span>
+         <span class="mord mathrm">
+          9
+         </span>
+        </span>
+        <span class="mrel reset-textstyle displaystyle textstyle uncramped">
+         =
+        </span>
+        <span class="mord displaystyle textstyle uncramped reset-textstyle displaystyle textstyle uncramped">
+         <span class="mord mathrm">
+          1
+         </span>
+        </span>
+       </span>
+      </span>
+     </span>
+    </span>
+   </p>
+  </div>
+                    <p><b>NOTE:</b> The circle in the above graph has radius 5. The trigonometric ratios work for a circle of any radius.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2016. All Rights Reserved.</small>
+                    </p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'bootstrap/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'bootstrap/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'bootstrap/js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'bootstrap/js/jquery.flexslider-min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'bootstrap/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/magnific-popup-options.js' %}"></script>
+
+	<!-- Main -->
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+
+	</body>
+</html>

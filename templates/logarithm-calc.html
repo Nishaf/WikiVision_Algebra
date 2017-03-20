@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WikiVision_A algebra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WikiVision A_algebra</title>
+  	<!-- Facebook and Twitter integration
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+    -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/icomoon.css' %}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/themify-icons.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/magnific-popup.css' %}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bootstrap/css/owl.theme.default.min.css' %}">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/flexslider.css' %}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static 'bootstrap/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'pulleys/katex.min-2017-01-19.css' %}">
+    <link rel="stylesheet" href="{% static 'pulleys/math2016-07-23.css' %}">
+	<link rel="stylesheet" href="{% static 'pulleys/log.css' %}">
+
+    <!-- Pulley Files-->
+    <script type="text/javascript" async="" src="{% static 'pulleys/ASCIIMathTeXKaTeX-2016-06-17.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/katex.minjs-2017-13-01.js' %}"></script>
+
+    <script type="text/javascript" async="" src="{% static 'pulleys/ddivs-voting-2016-10-11.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jquery-1.11.2.min.js' %}"></script>
+    <script type="text/javascript" async="" src="{% static 'pulleys/jsxgraphcore-0.99.5.js' %}"></script>
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'bootstrap/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="">WikiVision_A algebra</a></div>
+				</div>
+				<div class="col-xs-8 text-right">
+					<ul>
+						<li><a href="{% url 'basepage' %}">Home</a></li>
+						<li class="active"><a href="{% url 'models' %}">Models</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="gtco-hero" class="js-fullheight"  data-section="home">
+		<div class="flexslider js-fullheight">
+			<ul class="slides">
+		   	<li style="background-image: url({% static 'bootstrap/images/cal1.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>WikiVision_A algebra</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/math_equations-wallpaper-1920x1080.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+                            <h2>Finding Derivatives and Integrals Of your linear Equations</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		   	<li style="background-image: url({% static 'bootstrap/images/cal2.jpg' %})">
+		   		<div class="overlay"></div>
+		   		<div class="container">
+		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				<div class="slider-text-inner">
+		   					<h2>Draw Graphs.</h2>
+		   				</div>
+		   			</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
+	</div>
+
+	<div class="gtco-section-overflow">
+		<div class="gtco-section" id="gtco-services" data-section="services">
+			<div class="gtco-container">
+                <h1>Interactive Logarithm Table</h1>
+                <p>Before calculators, the best way to do arithmetic with large (or small) numbers was using log tables.</p>
+                <p>Invented in the early 1600s century by John Napier, log tables were a crucial tool for every mathematician for over 350 years.</p>
+                <p>First, let's find some log values and see what they mean when re-expressed in index notation.</p>
+                <h2>Find the log of a number</h2>
+                <p>Your calculator has only base 10 or base `e` logarithms. The following section allows you find the log of whatever number you like, for some common bases.</p>
+            </div>
+            <div class="col-sm-6 col-md-offset-3">
+                <form>
+                 <fieldset id="mylog">
+                     <h3>Log Values, Different Bases</h3>
+                         <p><span>Change number: </span><input id="logIn" type="text" value="134.82" />
+                         <label class="spacer">Choose base:</label>
+                         <select id = "base0">
+                            <option value = "2">2</option>
+                            <option value = "e">e</option>
+                            <option value = "3">3</option>
+                            <option value = "5">5</option>
+                            <option value = "10">10</option>
+                            <option value = "20">20</option>
+                            <option value = "100">100</option>
+                            </select>
+                         <label class="spacer">Round to</label>
+                         <select id = "roundTo0">
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                            <option value = "7">7</option>
+                            <option value = "8">8</option>
+                            <option value = "9">9</option>
+                        </select> decimal places
+                 </p>
+                 <p><button id="showLogVal">Show value:</button></p>
+                <p> The logarithm of <span id="N"></span> (base <span id="b"></span>) is <span id="logbN"></span>.</p>
+                <p> That is: <span id="logVal"></span></p>
+                 <p>In index notation, the above log equation means the same as: <span id="asIndex"></span></p>
+                  </fieldset>
+                </form>
+
+                <p>The above calculator is using the Change of Base formula that is</p>
+                <blockquote>
+                    <p class="formula">`log_b\ x=(log_a\ x)/(log_a\ b)`</p>
+                </blockquote>
+
+                <h2>Interactive Log Table</h2>
+                <p>In this next section, you can create different sized log tables, with different bases.</p>
+                <p>By exploring the values given in the tables, you can better understand how logs work. For example, when the base is 2, the log of 8 is 3.0000. This is simply because `2^3=8`. Logarithms are just index expressions written sideways, after all.</p>
+                <form>
+                 <fieldset>
+                     <legend>Table of Log Values</legend>
+                        <p><label>Choose base:</label>
+                         <select id = "base1">
+                            <option value = "2">2</option>
+                            <option value = "e">e</option>
+                            <option value = "3">3</option>
+                            <option value = "5">5</option>
+                            <option value = "10">10</option>
+                            <option value = "20">20</option>
+                            <option value = "100">100</option>
+                            </select>
+
+                         <label class="spacer">Round to</label>
+                         <select id = "roundTo">
+                            <option value = "4">4</option>
+                            <option value = "5">5</option>
+                            <option value = "6">6</option>
+                            <option value = "7">7</option>
+                            <option value = "8">8</option>
+                            <option value = "9">9</option>
+                            </select>  decimal places
+
+                         <label class="spacer">Max value...</label>
+                         <select id = "maxVal">
+                            <option value = "1">1.99</option>
+                            <option value = "2">2.99</option>
+                            <option value = "3">3.99</option>
+                           <option value = "4">4.99</option>
+                            <option value = "5">5.99</option>
+                            <option value = "6">6.99</option>
+                            <option value = "7">7.99</option>
+                            <option value = "8">8.99</option>
+                            <option value = "9">9.99</option>
+                            </select></p>
+                <h2>Log Table: Base <span id="thisBase">2</span></h2>
+                <div id="logOut"></div>
+                 </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2016. All Rights Reserved.</small>
+                    </p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'bootstrap/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static 'bootstrap/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static 'bootstrap/js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'bootstrap/js/jquery.flexslider-min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'bootstrap/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'bootstrap/js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static 'bootstrap/js/main.js' %}"></script>
+    <script type="text/javascript"  src="{% static 'pulleys/log.js' %}"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
