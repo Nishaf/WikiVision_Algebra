@@ -38,10 +38,9 @@ class GraphPlot(View):
         x = np.array(ran)
         eq = request.POST['lin_eq']
         y = eval(eq)
-        print(y)
         plt.axis([minrange, maxrange, minrange, maxrange])
         plt.plot(x, y)
-        plt.savefig("C:/Users/Nishaf Naeem Ch/django_3/static/bootstrap/images/test.png")
+        plt.savefig("test.png")
         plt.close()
         return render(request, 'graph.html')
 
