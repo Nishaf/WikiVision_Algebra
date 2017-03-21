@@ -3,9 +3,8 @@ from django.views.generic import View
 from sympy import *
 import numpy as np
 import matplotlib.pyplot as plt
-import math
 import re
-import os
+from django_3.settings import BASE_DIR
 
 class BasePage(View):
     def get(self, request):
@@ -63,7 +62,7 @@ class GraphPlot(View):
         y = eval(eq)
         plt.axis([minrange, maxrange, minrange, maxrange])
         plt.plot(x, y)
-        plt.savefig("C:\\Users\\Nishaf Naeem Ch\\django_3\\static\\bootstrap\\images\\test.png")
+        plt.savefig(BASE_DIR+"\\static\\bootstrap\\images\\test.png")
         plt.close()
         return render(request, 'graph.html')
 
